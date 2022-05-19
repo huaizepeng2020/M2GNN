@@ -135,6 +135,9 @@ if __name__ == '__main__':
     stopping_step = 0
     should_stop = False
 
+
+    print('--------------------start training------------------------')
+
     for epoch in range(args.epoch):
         """init DDP training"""
         dataloader.set_epoch(epoch)
